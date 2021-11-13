@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import com.todo.TodoService;
 
 @WebServlet(urlPatterns = "/todo.list")
-public class UserLogin extends HttpServlet{
+public class UserLoginServlet extends HttpServlet{
 	
 	UserValidation userValidationService=new UserValidation();
-	TodoService todoservice=new TodoService();
+	
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -29,8 +29,9 @@ public class UserLogin extends HttpServlet{
 		if(userValidationService.validateUser(username, password))
 		{
 			request.setAttribute("username", username);
-			request.setAttribute("todos", todoservice.getTodos());
-			request.getRequestDispatcher("/WEB-INF/views/todolistpage.jsp").forward(request, response);
+			//Redirect to todoServlet(/todo.do)
+			response.sendRedirect("/todo.do");
+			
 
 		}
 		else

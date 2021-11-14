@@ -1,39 +1,8 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
-<style>
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #f5f5f5;
-}
-</style>
-<title>ToDo List of User</title>
-</head>
-<body>
+<%@ include file="../common/header.jspf" %>
 <div style="overflow: scroll; height : 90%; max-height:500px">
-	<nav class="navbar navbar-default">
+<%@ include file="../common/navigation.jspf" %>
 
-		<a href="/" class="navbar-brand">Brand</a>
-
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="/todo.do">Todos</a></li>
-		</ul>
-
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/logout.do">Logout</a></li>
-		</ul>
-
-	</nav>
+	
 	<div class="container">
 		Welcome ${username}
 		<h3>Users ToDo List</h3>
@@ -62,12 +31,7 @@
 
 		</form>
 	</div>
+	</div>
+	<%@ include file="../common/footer.jspf" %>
 	
-	<footer class="footer">
-		<p>footer content</p>
-	</footer>
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</div>
-</body>
-</html>
+	

@@ -28,7 +28,8 @@ public class UserLoginServlet extends HttpServlet{
 		
 		if(userValidationService.validateUser(username, password))
 		{
-			request.setAttribute("username", username);
+			
+			request.getSession().setAttribute("username", username);
 			//Redirect to todoServlet(/todo.do)
 			response.sendRedirect("/todo.do");
 			

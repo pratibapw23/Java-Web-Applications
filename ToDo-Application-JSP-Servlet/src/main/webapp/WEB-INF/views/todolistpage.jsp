@@ -17,6 +17,10 @@ Welcome ${username}
 </c:forEach>
 
 </ol>
+<form action="/todo.do" method="post">
+<input type="text" name="todo"/> <input type="text" name="status"/> <input type="submit" value="Add Todo"/>
+
+</form>
 
 </body>
 </html>	

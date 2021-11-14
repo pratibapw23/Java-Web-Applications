@@ -18,4 +18,12 @@ public class TodoServlet extends HttpServlet{
 		request.setAttribute("todos", todoservice.getTodos());
 		request.getRequestDispatcher("/WEB-INF/views/todolistpage.jsp").forward(request, response);
 	}
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String todo=request.getParameter("todo");
+		String status=request.getParameter("status");
+		todoservice.addtodo(new Todo(todo,status));
+		
+		response.sendRedirect("/todo.do");
+	}
 }

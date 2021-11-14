@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.todo.TodoService;
 
-@WebServlet(urlPatterns = "/todo.list")
+@WebServlet(urlPatterns = "/login.do")
 public class UserLoginServlet extends HttpServlet{
 	
 	UserValidation userValidationService=new UserValidation();

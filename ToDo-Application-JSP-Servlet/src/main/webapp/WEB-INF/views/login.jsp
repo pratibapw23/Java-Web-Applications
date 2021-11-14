@@ -36,7 +36,7 @@
 	<div class="container">
 
 
-		<form action="/todo.list" method="post">
+		<form action="/login.do" method="post">
 			Enter Username<input type="text" name="username" /><br> Enter
 			Password<input type="password" name="password" /><br> <input
 				type="submit" />

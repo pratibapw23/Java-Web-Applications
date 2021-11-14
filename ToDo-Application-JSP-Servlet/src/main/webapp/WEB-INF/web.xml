@@ -6,7 +6,7 @@ version="3.1">
 	<display-name>To do List</display-name>
 
 	<welcome-file-list>
-		<welcome-file>todo.list</welcome-file>
+		<welcome-file>login.do</welcome-file>
 	</welcome-file-list>
 	
 

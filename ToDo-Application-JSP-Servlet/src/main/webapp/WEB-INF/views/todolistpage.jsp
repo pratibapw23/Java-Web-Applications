@@ -13,7 +13,7 @@ Welcome ${username}
 <ol>
 
 <c:forEach items="${todos}" var="todo">
-	<li>${todo.name} ${todo.status}</li>
+	<li>${todo.name} &nbsp; ${todo.status} &nbsp; &nbsp; <a href="delete-toto.do?todo=${todo.name}&status=${todo.status}">Delete</a></li>
 </c:forEach>
 
 </ol>

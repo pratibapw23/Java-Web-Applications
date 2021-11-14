@@ -22,5 +22,10 @@ public class TodoService {
 	{
 		todos.add(todo);
 	}
+	
+	public void deteletodo(Todo todo)
+	{
+		todos.remove(todo);
+	}
 
 }

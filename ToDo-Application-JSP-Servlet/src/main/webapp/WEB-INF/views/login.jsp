@@ -37,8 +37,8 @@
 
 
 		<form action="/login.do" method="post">
-			Enter Username<input type="text" name="username" /><br> Enter
-			Password<input type="password" name="password" /><br> <input
+			Enter Username &nbsp;<input type="text" name="username" /><br> <br>Enter
+			Password &nbsp;<input type="password" name="password" /><br><br> &nbsp;&nbsp;<input
 				type="submit" />
 		</form>
 		<p>${ErrorMessage}</p>
